@@ -1,0 +1,50 @@
+name: Update Bom PCB_top
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '*.kicad_sch'
+      - '*.kicad_pcb'
+      - '*.kiplot.yaml'
+      # - '.github/workflows/generate_output.yml'
+      # - 'design.kiplot.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - '*.kicad_sch'
+      - '*.kicad_pcb'
+      - '*.kiplot.yaml'
+      # - '.github/workflows/generate_output.yml'
+      # - 'design.kiplot.yml'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  BOM_PCBtop:
+    name: Update Bom, PCB_top and upload
+    runs-on: ubuntu-latest
+    container: ghcr.io/inti-cmnb/kicad6_auto:1.4.0
+    steps:
+    - name: Update system repositories, Install Required Libraries
+      run: |
+        apt update
+        apt -y install git
+    
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Assign variables from project.properties to Env variable
+      run: |
+        cat project.properties >> $GITHUB_ENV  
+
+    - name: Run BOM 
+      run: |
+        [ -f *.kicad_sch ] && kiplot -d Fabrication -s all bom_csv_upload pcb_top_b pcb_bottom_b
+        head -n -12 Fabrication/BoM/design-bom.csv > Fabrication/BoM/design-bom-short.csv 
+
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        repository: .
+        commit_message: Update Bom and PCB_top
