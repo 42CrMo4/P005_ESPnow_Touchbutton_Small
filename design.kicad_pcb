@@ -94,7 +94,7 @@
 
   (footprint "Connector_USB_custom:USB_C_Receptacle_GCT_USB4130-GF-C" (layer "F.Cu")
     (tedit 0) (tstamp eec94247-1d2c-4317-a8a0-ca9abc04d6af)
-    (at 146.5 96.5)
+    (at 146.5 96)
     (property "Sheetfile" "File: design.kicad_sch")
     (property "Sheetname" "")
     (path "/b1b78902-1557-46e9-9466-76f6cf11f8e2")
