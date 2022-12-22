@@ -17,10 +17,10 @@ on:
 jobs:
   ERC:
     runs-on: ubuntu-latest
-    container: ghcr.io/inti-cmnb/kicad6_auto:1.4.0
+    container: ghcr.io/inti-cmnb/kicad6_auto:1.5.1
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Run ERC
       run: |
@@ -33,11 +33,11 @@ jobs:
 
   DRC:
     runs-on: ubuntu-latest
-    container: ghcr.io/inti-cmnb/kicad6_auto:1.4.0
+    container: ghcr.io/inti-cmnb/kicad6_auto:1.5.1
     needs: ERC
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Run DRC
       run: |
@@ -53,7 +53,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    container: ghcr.io/inti-cmnb/kicad6_auto:1.4.0
+    container: ghcr.io/inti-cmnb/kicad6_auto:1.5.1
     needs: DRC
 
     steps:
@@ -63,7 +63,7 @@ jobs:
         apt -y install git
     
     - name: Checkout Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Assign variables from project.properties to Env variable
       run: |
@@ -117,7 +117,7 @@ jobs:
         cd Fabrication_temp
         for file in *; do mv -v ${file} ${{ env.ID_prefix }}${{ env.ID }}_${{ env.project_name }}_${{ github.ref_name }}_${file}; done #https://unix.stackexchange.com/a/389516
 
-    - uses: vimtor/action-zip@v1
+    - uses: vimtor/action-zip@v1.1
       with:
         files: Gerber/
         recursive: false

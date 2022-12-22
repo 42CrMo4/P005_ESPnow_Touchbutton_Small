@@ -25,8 +25,15 @@ delet all PCB stuff but not the text Placeholders <<...>> and the Board Edge (or
 If not working:
 setting -> action -> general -> Workflow permissions -> Read and write permissions
 
+## working
+
+in the first workflow run the action will create a new branch "documentation" to store the newest PCBdraw pictures. 
+Each action run will force push the png to this branch. So so not use the Fabrication folder in the documentation branch.
+
 ## Description. 
 
-| Font                                           | Back                                             |
-|------------------------------------------------|--------------------------------------------------|
-| ![PCB Top design](Fabrication/PCBdraw_Top.png) | ![PCB Back design](Fabrication/PCBdraw_Back.png) |
+| Font                                                                    | Back                                                                      |
+|-------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| ![PCB Top design](../../blob/documentation/Fabrication/PCBdraw_Top.png) | ![PCB Back design](../../blob/documentation/Fabrication/PCBdraw_Back.png) |
+
+![Link to the current BOM](../../tree/documentation/Fabrication/BoM)
