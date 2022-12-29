@@ -1,4 +1,4 @@
-# Example KiPlot config file  
+# Example KiPlot config file   
 kiplot:
   version: 1
 
@@ -52,12 +52,13 @@ outputs:
       blacklist: 'DNF*'
       output: 'iBoM.html'
 
-  - name: 'bom_csv'
+  - name: 'bom_csv_release'
     comment: "Bill of Materials in CSV format" 
     type: bom
-    dir: BoM
+    dir: .
     options:
       format: CSV
+      output: BoM-long.csv
       hide_pcb_info: false
       hide_stats_info: false
 
