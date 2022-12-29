@@ -1453,9 +1453,9 @@
       (net 26 "+BATT") (pinfunction "VBUS") (pintype "passive") (tstamp ea30758b-0c3b-4a08-82f0-949aa260530c))
     (pad "B12" smd rect (at -2.75 0.8 90) (size 2 0.9) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 2 "GND") (pinfunction "GND") (pintype "passive") (tstamp 637248c2-51d9-47fa-9ad8-178888455aa4))
-    (pad "S1" thru_hole oval (at 4.27 0 90) (size 1.7 1) (drill oval 1.2 0.5) (layers *.Cu *.Mask)
+    (pad "S1" thru_hole circle (at 4.27 0 90) (size 1.7 1.7) (drill 1.2) (layers *.Cu *.Mask)
       (net 1 "unconnected-(J1-PadS1)") (pinfunction "SHIELD") (pintype "passive+no_connect") (tstamp 967be9eb-95d7-4c47-8ee8-c2a530aa7187))
-    (pad "S1" thru_hole oval (at -4.27 0 90) (size 1.7 1) (drill oval 1.2 0.5) (layers *.Cu *.Mask)
+    (pad "S1" thru_hole circle (at -4.27 0 90) (size 1.7 1.7) (drill 1.2) (layers *.Cu *.Mask)
       (net 1 "unconnected-(J1-PadS1)") (pinfunction "SHIELD") (pintype "passive+no_connect") (tstamp e6c7caf4-2a49-4086-9ac2-7195ff783bc5))
     (model ":ki-lib_dir:Connector_USB_custom.3dshapes/GCT_USB4130GFC/USB4130-GF-C.stp"
       (offset (xyz 0 0 0))
