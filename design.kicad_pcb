@@ -1516,7 +1516,7 @@
   (gr_circle (center 133 100.5) (end 133.25 100.5) (layer "F.SilkS") (width 0.12) (fill solid) (tstamp 589ede40-a31b-4427-baaf-78563c36e45f))
   (gr_circle (center 137.25 96) (end 137.5 96) (layer "F.SilkS") (width 0.12) (fill solid) (tstamp 833d2cb8-c838-47dc-9690-c40d1f8ff65f))
   (gr_circle (center 150 100) (end 170 100) (layer "Edge.Cuts") (width 0.05) (fill none) (tstamp 314ae53f-bb1c-4089-8f52-69e43ffb92cd))
-  (gr_text "<<project_name>>\n<<ID>>\n<<version>>\n<<date>>\n<<hash>>\n<<website_link>>" (at 149.5 88.5) (layer "B.SilkS") (tstamp ad2b70d1-90c2-42a9-959e-57cfc5cc7ee5)
+  (gr_text "<<project_name>>\n<<ID>>\n<<version>>\n<<date>>\n<<hash>>\n<<website_link>>" (at 150 88.5) (layer "B.SilkS") (tstamp ad2b70d1-90c2-42a9-959e-57cfc5cc7ee5)
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (gr_text "TOG:\nLOW - Direct Mode\nHIGH - Toggle Mode\n\nAHLB:\nLOW - CMOS active high output\nHIGH - CMOS active low output" (at 154.5 103.75) (layer "B.SilkS") (tstamp bb279f02-da1d-4cff-996a-37500821ea58)
