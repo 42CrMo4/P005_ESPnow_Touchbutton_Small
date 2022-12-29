@@ -14,7 +14,7 @@ Check before releasing and/or submitting to FAB
 - [x] Double check the final files
 - [x] Fill Changelog (release_note.md)
 - [x] projekt.properties filled correctly
-- [ ] Weblink / version / Date / name present SCH
+- [x] Weblink / version / Date / name present SCH
 - [x] Weblink / version / Date / name present PCB
 - [x] Power Trace correct width
 - [x] decoupling capacitors present
