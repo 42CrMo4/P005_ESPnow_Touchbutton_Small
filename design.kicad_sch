@@ -2643,7 +2643,7 @@
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
     (fill (color 0 0 0 0.0000))
     (uuid 36a976d9-44dd-4490-b2d0-422b06b517f4)
-    (property "Sheet name" "USB programmer" (id 0) (at 207.645 20.8784 0)
+    (property "Sheet name" "USBprogrammer" (id 0) (at 207.645 20.8784 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
     (property "Sheet file" "USBprogrammer.kicad_sch" (id 1) (at 207.645 43.1296 0)
