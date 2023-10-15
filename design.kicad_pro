@@ -428,10 +428,13 @@
     [
       "46918595-4a45-48e8-84c0-961b4db7f35f",
       ""
+<<<<<<< HEAD
     ],
     [
       "36a976d9-44dd-4490-b2d0-422b06b517f4",
       "USBprogrammer"
+=======
+>>>>>>> parent of 5946b57 (put USB porgrammer in extra sheet)
     ]
   ],
   "text_variables": {}
