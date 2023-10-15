@@ -2646,7 +2646,7 @@
     (property "Sheet name" "USB programmer" (id 0) (at 207.645 20.8784 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheet file" "USB_programmer.kicad_sch" (id 1) (at 207.645 43.1296 0)
+    (property "Sheet file" "USBprogrammer.kicad_sch" (id 1) (at 207.645 43.1296 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
   )
