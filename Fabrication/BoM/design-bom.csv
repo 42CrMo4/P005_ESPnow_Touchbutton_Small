@@ -1,0 +1,19 @@
+Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datasheet
+1,USB 2.0-only Type-C Receptacle connector,USB4130-GF-C,J1,USB4130-GF-C,USB_C_Receptacle_GCT_USB4130-GF-C,1, ,https://gct.co/files/drawings/usb4130.pdf
+
+
+
+
+
+Project info:
+Schematic:,design
+Variant:,default
+Revision:,<<version>>
+Date:,<<date>>
+KiCad Version:,6.0.9+dfsg-1~bpo11+1
+Statistics:
+Component Groups:,1
+Component Count:,1
+Fitted Components:,1
+Number of PCBs:,1
+Total Components:,1
