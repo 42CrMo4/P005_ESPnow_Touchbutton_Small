@@ -94,7 +94,7 @@ jobs:
 
     - name: Run Schematic and BOM 
       run: |
-        [ -f design.kicad_sch ] && kiplot  -d Fabrication_temp -s all  print_sch interactive_bom diff_sch
+        [ -f *.kicad_sch ] && kiplot  -d Fabrication_temp -s all  print_sch interactive_bom diff_sch
     
     - name: Update the PCBs with the git hash
       run: |
