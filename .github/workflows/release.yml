@@ -17,7 +17,7 @@ on:
 jobs:
   ERC:
     runs-on: ubuntu-latest
-    container: ghcr.io/inti-cmnb/kicad6_auto:1.5.1
+    container: ghcr.io/inti-cmnb/kicad6_auto:1.6.3
 
     steps:
     - uses: actions/checkout@v3
@@ -33,7 +33,7 @@ jobs:
 
   DRC:
     runs-on: ubuntu-latest
-    container: ghcr.io/inti-cmnb/kicad6_auto:1.5.1
+    container: ghcr.io/inti-cmnb/kicad6_auto:1.6.3
     needs: ERC
 
     steps:
@@ -53,7 +53,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    container: ghcr.io/inti-cmnb/kicad6_auto:1.5.1
+    container: ghcr.io/inti-cmnb/kicad6_auto:1.6.3
     needs: DRC
 
     steps:
