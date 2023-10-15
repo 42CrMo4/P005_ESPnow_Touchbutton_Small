@@ -422,11 +422,11 @@
       )
     )
     (symbol "Connector_custom:SKEDD{colon}490107670612" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "J2" (id 0) (at 0 10.795 0)
-        (effects (font (size 1.27 1.27)))
+      (property "Reference" "J" (id 0) (at -7.62 6.35 0)
+        (effects (font (size 1.27 1.27)) (justify left bottom))
       )
-      (property "Value" "SKEDD:490107670612" (id 1) (at 0 8.255 0)
-        (effects (font (size 1.27 1.27)))
+      (property "Value" "SKEDD{colon}490107670612" (id 1) (at -10.16 -7.62 0)
+        (effects (font (size 1.27 1.27)) (justify left bottom))
       )
       (property "Footprint" "Connector_custom:WURTH_490107670612" (id 2) (at 0 15.24 0)
         (effects (font (size 1.27 1.27)) (justify bottom) hide)
@@ -476,7 +476,7 @@
           (fill (type background))
         )
         (pin passive line (at -12.7 2.54 0) (length 5.08)
-          (name "TX" (effects (font (size 1.016 1.016))))
+          (name "TX/EN" (effects (font (size 1.016 1.016))))
           (number "1" (effects (font (size 1.016 1.016))))
         )
         (pin passive line (at 12.7 2.54 180) (length 5.08)
@@ -484,7 +484,7 @@
           (number "2" (effects (font (size 1.016 1.016))))
         )
         (pin passive line (at -12.7 0 0) (length 5.08)
-          (name "RX" (effects (font (size 1.016 1.016))))
+          (name "RX/IO9" (effects (font (size 1.016 1.016))))
           (number "3" (effects (font (size 1.016 1.016))))
         )
         (pin passive line (at 12.7 0 180) (length 5.08)
@@ -496,7 +496,7 @@
           (number "5" (effects (font (size 1.016 1.016))))
         )
         (pin passive line (at 12.7 -2.54 180) (length 5.08)
-          (name "D+/UPDI" (effects (font (size 1.016 1.016))))
+          (name "D+/UDPI" (effects (font (size 1.016 1.016))))
           (number "6" (effects (font (size 1.016 1.016))))
         )
       )
@@ -1709,6 +1709,7 @@
     )
   )
 
+
   (junction (at 449.707 48.26) (diameter 0) (color 0 0 0 0)
     (uuid 04a83041-cc46-4a82-8b9d-f9f6090bdabe)
   )
@@ -1794,6 +1795,7 @@
   (no_connect (at 207.01 113.03) (uuid c0a857f0-753d-4f64-8a2a-f758bcf3401d))
   (no_connect (at 448.437 87.63) (uuid cb66653e-2d62-4517-8433-a37beedc67fa))
   (no_connect (at 448.437 54.61) (uuid d09690f2-77f9-4b4d-a2ba-20cbc72f1d6b))
+  (no_connect (at 372.745 31.75) (uuid d1213492-c688-46bd-925b-1e871893def5))
   (no_connect (at 207.01 115.57) (uuid e81ca377-b6f0-4407-a937-1a30c34a18d1))
   (no_connect (at 242.57 113.03) (uuid ed9b3779-0dd8-44ea-a433-01178cffadb5))
   (no_connect (at 207.01 107.95) (uuid ee5db413-b5c6-4ef8-89dd-cb07e4965439))
@@ -2904,7 +2906,7 @@
   (symbol (lib_id "power:GND2") (at 388.62 65.405 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 221d991a-3189-4d68-aa64-973fc9c6728e)
-    (property "Reference" "#PWR?" (id 0) (at 388.62 71.755 0)
+    (property "Reference" "#PWR0130" (id 0) (at 388.62 71.755 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND2" (id 1) (at 388.62 69.85 0))
@@ -2953,7 +2955,7 @@
   (symbol (lib_id "power:GND2") (at 372.745 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 2b7251ef-96e2-49ad-8813-a51028ef267b)
-    (property "Reference" "#PWR?" (id 0) (at 372.745 93.98 0)
+    (property "Reference" "#PWR0139" (id 0) (at 372.745 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND2" (id 1) (at 372.745 92.075 0))
@@ -3556,7 +3558,7 @@
   (symbol (lib_id "power:GND2") (at 465.455 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid a147201a-5151-43a7-9490-2ce3f1a38a93)
-    (property "Reference" "#PWR?" (id 0) (at 465.455 54.61 0)
+    (property "Reference" "#PWR0102" (id 0) (at 465.455 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND2" (id 1) (at 465.455 52.705 0))
@@ -3814,7 +3816,7 @@
   (symbol (lib_id "power:GND2") (at 429.26 96.774 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid c96b4573-30f4-417e-bf97-6089822580f6)
-    (property "Reference" "#PWR?" (id 0) (at 429.26 103.124 0)
+    (property "Reference" "#PWR0103" (id 0) (at 429.26 103.124 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND2" (id 1) (at 429.26 101.219 0))
@@ -3981,7 +3983,7 @@
   (symbol (lib_id "power:GND2") (at 399.415 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid ef3a6db4-f00c-475f-a770-055a8956253f)
-    (property "Reference" "#PWR?" (id 0) (at 399.415 93.98 0)
+    (property "Reference" "#PWR0136" (id 0) (at 399.415 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND2" (id 1) (at 399.415 92.075 0))
@@ -3997,7 +3999,7 @@
   (symbol (lib_id "power:GND2") (at 351.155 59.055 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid f57b80b6-cbf9-4536-ae44-f769a7a951ff)
-    (property "Reference" "#PWR?" (id 0) (at 351.155 65.405 0)
+    (property "Reference" "#PWR0137" (id 0) (at 351.155 65.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND2" (id 1) (at 351.155 63.5 0))
@@ -4051,6 +4053,12 @@
   (symbol_instances
     (path "/fd01b5f9-ab24-47d3-b0e0-fa192a3cd202"
       (reference "#PWR0101") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/a147201a-5151-43a7-9490-2ce3f1a38a93"
+      (reference "#PWR0102") (unit 1) (value "GND2") (footprint "")
+    )
+    (path "/c96b4573-30f4-417e-bf97-6089822580f6"
+      (reference "#PWR0103") (unit 1) (value "GND2") (footprint "")
     )
     (path "/3f5d8444-daf5-487a-9975-763b5197b8e2"
       (reference "#PWR0104") (unit 1) (value "+3.3V") (footprint "")
@@ -4130,6 +4138,9 @@
     (path "/a5d37714-e5fc-42f1-8134-b2a455749baa"
       (reference "#PWR0129") (unit 1) (value "VBUS") (footprint "")
     )
+    (path "/221d991a-3189-4d68-aa64-973fc9c6728e"
+      (reference "#PWR0130") (unit 1) (value "GND2") (footprint "")
+    )
     (path "/c09c46fe-e833-42b9-b613-8a0be5b76818"
       (reference "#PWR0131") (unit 1) (value "VBUS") (footprint "")
     )
@@ -4145,26 +4156,17 @@
     (path "/4235bda1-9155-45cc-a072-3e48c9102a0a"
       (reference "#PWR0135") (unit 1) (value "VDD") (footprint "")
     )
+    (path "/ef3a6db4-f00c-475f-a770-055a8956253f"
+      (reference "#PWR0136") (unit 1) (value "GND2") (footprint "")
+    )
+    (path "/f57b80b6-cbf9-4536-ae44-f769a7a951ff"
+      (reference "#PWR0137") (unit 1) (value "GND2") (footprint "")
+    )
     (path "/b1b5e140-aefa-411a-bf1f-5dafcc78873e"
       (reference "#PWR0138") (unit 1) (value "GND") (footprint "")
     )
-    (path "/221d991a-3189-4d68-aa64-973fc9c6728e"
-      (reference "#PWR?") (unit 1) (value "GND2") (footprint "")
-    )
     (path "/2b7251ef-96e2-49ad-8813-a51028ef267b"
-      (reference "#PWR?") (unit 1) (value "GND2") (footprint "")
-    )
-    (path "/a147201a-5151-43a7-9490-2ce3f1a38a93"
-      (reference "#PWR?") (unit 1) (value "GND2") (footprint "")
-    )
-    (path "/c96b4573-30f4-417e-bf97-6089822580f6"
-      (reference "#PWR?") (unit 1) (value "GND2") (footprint "")
-    )
-    (path "/ef3a6db4-f00c-475f-a770-055a8956253f"
-      (reference "#PWR?") (unit 1) (value "GND2") (footprint "")
-    )
-    (path "/f57b80b6-cbf9-4536-ae44-f769a7a951ff"
-      (reference "#PWR?") (unit 1) (value "GND2") (footprint "")
+      (reference "#PWR0139") (unit 1) (value "GND2") (footprint "")
     )
     (path "/813c0053-e90d-4b8b-a843-69f867fbea67"
       (reference "C1") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0805_2012Metric")
