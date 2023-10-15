@@ -27,7 +27,7 @@ on:
 jobs:
   ERC-DRC:
     runs-on: ubuntu-latest
-    container: ghcr.io/inti-cmnb/kicad6_auto:1.5.1
+    container: ghcr.io/inti-cmnb/kicad6_auto:1.6.3
 
     steps:
     - uses: actions/checkout@v3
@@ -64,7 +64,7 @@ jobs:
   Fabrication:
     name: Fabrication files
     runs-on: ubuntu-latest
-    container: ghcr.io/inti-cmnb/kicad6_auto:1.5.1
+    container: ghcr.io/inti-cmnb/kicad6_auto:1.6.3
     # needs: ERC
 
     steps:
