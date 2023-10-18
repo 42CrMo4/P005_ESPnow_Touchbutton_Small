@@ -1,5 +1,26 @@
-Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datasheet
-1,USB 2.0-only Type-C Receptacle connector,USB4130-GF-C,J1,USB4130-GF-C,USB_C_Receptacle_GCT_USB4130-GF-C,1, ,https://gct.co/files/drawings/usb4130.pdf
+Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datasheet,MF,AVAILABILITY,PRICE,PACKAGE,MP,PURCHASE-URL,MAXIMUM_PACKAGE_HEIGHT,Check_prices,STANDARD,PARTREV,SnapEDA_Link,MANUFACTURER
+1,"Unpolarized capacitor, small symbol",C_Small,C4 C6,0.1uF,C_0805_2012Metric,2, ,~,,,,,,,,,,,,
+2,"Unpolarized capacitor, small symbol",C_Small,C1 C2 C5 C8 C9 C10 C11,1uF,C_0805_2012Metric,7, ,~,,,,,,,,,,,,
+3,"Unpolarized capacitor, small symbol",C_Small,C3,10uF,C_0805_2012Metric,1, ,~,,,,,,,,,,,,
+4,"Unpolarized capacitor, small symbol",C_Small,C7,0-50pF,C_0805_2012Metric,1, ,~,,,,,,,,,,,,
+5,"Dual 100V 215mA high-speed switching diodes, common cathode, SOT-23",BAV70,D2,BAV70,SOT-23,1, ,https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf,,,,,,,,,,,,
+6,Light emitting diode,LED,D1,LED,LED_0603_1608Metric,1, ,~,,,,,,,,,,,,
+7,"Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_02x03_Odd_Even,J3,Conn_02x03_Odd_Even,PinHeader_2x03_P2.54mm_Vertical,1, ,~,,,,,,,,,,,,
+8,USB Full-Featured Type-C Receptacle connector,USB_C_Receptacle,J1,HRO_TYPE-C-31-M-12,USB_C_Receptacle_HRO_TYPE-C-31-M-12,1, ,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,,,,,,,,,,,,
+9,"6 Position Ribbon Cable Connector Black IDC 28 AWG Through Hole, SKEDD",SKEDD{colon}490107670612,J2,SKEDD:490107670612,WURTH_490107670612,1, ,,Wurth Electronics,In Stock,None,None,490107670612,,10.45 mm,https://www.snapeda.com/parts/490107670612/Wurth+Electronics+Inc./view-part/?ref=eda,Manufacturer Recommendations,002.003,https://www.snapeda.com/parts/490107670612/Wurth+Electronics+Inc./view-part/?ref=snap,Würth Elektronik
+10,"Jumper, 2-pole, closed/bridged",Jumper_2_Bridged,JP2,AHLB,SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,1, ,~,,,,,,,,,,,,
+11,"Jumper, 2-pole, open",Jumper_2_Open,JP1,TOG,SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,1, ,~,,,,,,,,,,,,
+12,"Resistor, small symbol",R_Small,R3,470,R_0805_2012Metric,1, ,~,,,,,,,,,,,,
+13,"Resistor, small symbol",R_Small,R7 R8,5.1k,R_0805_2012Metric,2, ,~,,,,,,,,,,,,
+14,"Resistor, small symbol",R_Small,R1 R2 R4 R5 R6,10K,R_0805_2012Metric,5, ,~,,,,,,,,,,,,
+15,"Switch, dual pole double throw, separate symbols",SW_DPDT_x2,SW3,5V/3.3V,SW_DPDT_CK_JS202011JCQN,1, ,~,,,,,,,,,,,,
+16,"Push button switch, generic, two pins",SW_Push,SW1,EN,RKB2,1, ,~,,,,,,,,,,,,
+17,"Push button switch, generic, two pins",SW_Push,SW2,IO9,RKB2,1, ,~,,,,,,,,,,,,
+18,"Switch, dual pole double throw, separate symbols",SW_DPDT_x2,SW4,VDD/NC,SW_DPDT_CK_JS202011JCQN,1, ,~,,,,,,,,,,,,
+19,"WiFi Modules (802.11) (Engineering Samples) SMD module, ESP32-C3, 4MB SPI flash, PCB antenna, -40 C +105 C",ESP32-C3-WROOM-02-N4,U3,ESP32-C3-WROOM-02-N4,MODULE_ESP32-C3-WROOM-02-H4,1, ,,Espressif Systems,In Stock,None,Package,ESP32-C3-WROOM-02-H4,https://pricing.snapeda.com/search/part/ESP32-C3-WROOM-02-H4/?ref=eda,,,,,,
+20,"250mA Low Quiscent Current LDO, 3.3V output, SOT-23",MCP1700x-330xxTT,U1 U5,MCP1700x-330xxTT,SOT-23,2, ,http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf,,,,,,,,,,,,
+21,,"TCK108AF,LF",U2,"TCK108AF,LF",SOT-23-5,1, ,https://toshiba.semicon-storage.com/info/TCK108AF_datasheet_en_20151229.pdf?did=53240&prodName=TCK108AF,,,,,,,,,,,,
+22,,TTP223,U4,TTP223,SOT-23-6_Handsoldering,1, ,,,,,,,,,,,,,
 
 
 
