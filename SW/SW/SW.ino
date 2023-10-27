@@ -55,7 +55,7 @@ void setup() {
   pinMode(7, OUTPUT);
   pinMode(STATUS_BUTTON_6, OUTPUT);
 
-  digitalWrite(STATUS_BUTTON_6, LOW);
+  digitalWrite(STATUS_BUTTON_6, HIGH);
   digitalWrite(7, HIGH);
 
 //  if (digitalRead(STATUS_BUTTON_3) == HIGH)
